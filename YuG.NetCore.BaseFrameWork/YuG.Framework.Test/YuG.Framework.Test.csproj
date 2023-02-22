@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <Authors>GY</Authors>
+	  <Company>FiskSoft</Company>
+	  <Description>Fisk .NET6 单元测试基类</Description>
+	  <RepositoryUrl>http://fisksoft.qicp.vip:6666/defaultcollection/Fisk.NetCore.BaseFrameWork/_git/Fisk.NetCore.BaseFrameWork</RepositoryUrl>
+	  <RepositoryType>tfs</RepositoryType>
+	  <AssemblyVersion>1.0.0.1</AssemblyVersion>
+	  <FileVersion>1.0.0.1</FileVersion>
+	  <VersionPrefix>1.0.0.1</VersionPrefix>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="YuG.Framework.Core" Version="1.0.0.8" />
+		<PackageReference Include="Microsoft.TestPlatform.TestHost" Version="17.0.0" />
+		<PackageReference Include="xunit.abstractions" Version="2.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="6.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.TestHost" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\YuG.Framework.Core\YuG.Framework.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+</Project>

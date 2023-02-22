@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YuG.Framework.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:YuG.Framework.WebAPI.Controllers.APITestController">
+            <summary>
+            测试API
+            </summary>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.Controllers.APITestController.#ctor(YuG.Framework.Authorization.IUserInfoHelper,YuG.Framework.Authorization.ITokenHelper,Microsoft.Extensions.Logging.ILogger{YuG.Framework.WebAPI.Controllers.APITestController})">
+            <summary>
+            Test
+            </summary>
+            <param name="userInfoHelper"></param>
+            <param name="tokenHelper"></param>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.Controllers.APITestController.GetToken(System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            获取Token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.Controllers.APITestController.GetCurrentUserInfo">
+            <summary>
+            获取当前登录人信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.Controllers.APITestController.GetCurrentToken">
+            <summary>
+            获取当前登录人使用的Token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.Controllers.APITestController.SerializeJwt(System.String)">
+            <summary>
+            解析Token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.Controllers.APITestController.TestHttpContextAsync">
+            <summary>
+            HttpContext
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:YuG.Framework.WebAPI.Controllers.GeneratorsController">
+            <summary>
+            代码生成
+            </summary>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.Controllers.GeneratorsController.BuildEntity">
+            <summary>
+            生成实体
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.Controllers.GeneratorsController.BuildServiceCode">
+            <summary>
+            生成代码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:YuG.Framework.WebAPI.Controllers.SystemDbController">
+            <summary>
+            系统库处理
+            </summary>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.Controllers.SystemDbController.#ctor(SqlSugar.ISqlSugarClient)">
+            <summary>
+            Init
+            </summary>
+            <param name="client"></param>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.Controllers.SystemDbController.CreateDb">
+            <summary>
+            创建数据库
+            </summary>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.Controllers.SystemDbController.CreateTable">
+            <summary>
+            创建表
+            </summary>
+        </member>
+        <member name="T:YuG.Framework.WebAPI.SystemManage.RoleInfoController">
+            <summary>
+            角色管理
+            </summary>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.RoleInfoController.#ctor(YuG.Framework.Service.Domain.SystemManage.RoleInfoService)">
+            <summary>
+            init
+            </summary>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.RoleInfoController.List(YuG.Framework.Service.Domain.SystemManage.RoleInfoQuery)">
+            <summary>
+            查询数据列表
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.RoleInfoController.Get(System.Int32)">
+            <summary>
+            根据id查询数据
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.RoleInfoController.Add(YuG.Framework.Service.Domain.SystemManage.AddRoleInfoDTO)">
+            <summary>
+            添加数据
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.RoleInfoController.Edit(YuG.Framework.Service.Domain.SystemManage.EditRoleInfoDTO)">
+            <summary>
+            编辑数据
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.RoleInfoController.Delete(System.Int32)">
+            <summary>
+            删除数据
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:YuG.Framework.WebAPI.SystemManage.UserInfoController">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.UserInfoController.#ctor(YuG.Framework.Service.Domain.SystemManage.UserInfoService)">
+            <summary>
+            init
+            </summary>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.UserInfoController.List(YuG.Framework.Service.Domain.SystemManage.UserInfoQuery)">
+            <summary>
+            查询数据列表
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.UserInfoController.Get(System.Int32)">
+            <summary>
+            根据id查询数据
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.UserInfoController.Add(YuG.Framework.Service.Domain.SystemManage.AddUserInfoDTO)">
+            <summary>
+            添加数据
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.UserInfoController.Edit(YuG.Framework.Service.Domain.SystemManage.EditUserInfoDTO)">
+            <summary>
+            编辑数据
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.UserInfoController.Delete(System.Int32)">
+            <summary>
+            删除数据
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.UserInfoController.Test(System.String)">
+            <summary>
+            test
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.UserInfoController.Test2(System.String)">
+            <summary>
+            test2
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.UserInfoController.Test3(System.String)">
+            <summary>
+            test3
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.UserInfoController.Test4(System.String)">
+            <summary>
+            test4
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.SystemManage.UserInfoController.Test5(System.String)">
+            <summary>
+            test5
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:YuG.Framework.WebAPI.Extends.CustomizeAuthorizationHandler">
+            <summary>
+            自定义授权处理程序
+            </summary>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.Extends.CustomizeAuthorizationHandler.#ctor(Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider,Microsoft.Extensions.Logging.ILogger{YuG.Framework.WebAPI.Extends.CustomizeAuthorizationHandler},Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            init
+            </summary>
+            <param name="schemes"></param>
+            <param name="log"></param>
+            <param name="httpContext"></param>
+        </member>
+        <member name="M:YuG.Framework.WebAPI.Extends.CustomizeAuthorizationHandler.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,Microsoft.AspNetCore.Authorization.IAuthorizationRequirement)">
+            <summary>
+            授权处理
+            </summary>
+            <param name="context"></param>
+            <param name="requirement"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Program">
+            <summary>
+            扩展类(单元测试)
+            </summary>
+        </member>
+    </members>
+</doc>
