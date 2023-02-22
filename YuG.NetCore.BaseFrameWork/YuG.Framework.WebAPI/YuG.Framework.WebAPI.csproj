@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <DocumentationFile>..\Fisk.Framework.WebAPI\Fisk.Framework.WebAPI.xml</DocumentationFile>
+    <DocumentationFile>..\YuG.Framework.WebAPI\YuG.Framework.WebAPI.xml</DocumentationFile>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
